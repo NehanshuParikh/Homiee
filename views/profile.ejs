@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+
+</head>
+
+<body>
+    <!-- Student Profile -->
+    <div class="student-profile py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4" id="student-card">
+                    <div class="card shadow-lg">
+                        <div class="card-header bg-transparent text-center img-parent">
+                            <img class="profile_img" id="img"
+                                src="data:image/jpeg;base64,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"
+                                alt="hello">
+                            <!-- here we need to add the input field type filoe via th euser will upload its profile photo -->
+                            <h3><%= user.fullname %></h3>
+                            <p>It is advised to delete your data once the chat is finsihed</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-0"><strong class="pr-1">User ID: </strong>@<%= user.username %></p>
+                            <p class="mb-0"><strong class="pr-1">Email: </strong><%= user.email %></p>
+                            <p class="mb-0"><strong class="pr-1"></strong><a href="/login" class="btn btn-sm btn-danger">Log Out</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+        integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/javascripts/profile.js"></script>
+</body>
+
+</html>

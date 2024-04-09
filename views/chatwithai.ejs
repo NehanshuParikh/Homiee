@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Background animado in text</title>
+  <link rel="stylesheet" href="/stylesheets/chatwithai.css">
+</head>
+
+<body>
+  <div class='background'>
+    <svg class="transition" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path class="path" stroke="#transparent" fill="#000" dur="10s" vector-effect="non-scaling-stroke"
+        d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
+      <animateMotion dur="9.5s" repeatCount="indefinite">
+        <mpath xlink:href="#path" />
+        <path class="path0" stroke="#transparent" fill="#fff" dur="10s" vector-effect="non-scaling-stroke"
+          d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
+        <animateMotion dur="9.5s" repeatCount="indefinite">
+          <mpath xlink:href="#path0" />
+        </animateMotion>
+    </svg>
+  </div>
+  <!-- Inside the <body> tag -->
+  <div class="content">
+    <h1>Hello, <%= user.fullname %></h1>
+    <!-- Add more content as needed -->
+  </div>
+
+  </div>
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <script src="https://mediafiles.botpress.cloud/040d4442-7b91-45cf-a103-c8f71144f636/webchat/config.js" defer></script>
+  <!-- font awesome cdn -->
+  <script src="https://kit.fontawesome.com/8b3a9690db.js" crossorigin="anonymous"></script>
+
+  <!-- sheryjs js cdn -->
+  <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+
+  <!--  Gsap is needed for Basic Effects -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- Scroll Trigger is needed for Scroll Effects -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Three.js is needed for 3d Effects -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+  <!-- ControlKit is needed for Debug Panel -->
+  <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+  <script src="/javascripts/chatwithai.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    font-weight: 900;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: ivory;
+    cursor: pointer;
+    left: 0%;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background>.transition {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#text {
+    position: absolute;
+    border-radius: 50px;
+    padding: 1%;
+    font-size: 6em;
+    z-index: 9999;
+    top: 20%;
+    color: black;
+    -webkit-text-fill-color: transparent;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.6px;
+    -webkit-text-stroke-color: white;
+}
+
+#_text {
+    color: white;
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: .7px;
+    -webkit-text-stroke-color: black;
+    position: absolute;
+    font-size: 1.6em;
+    z-index: 9999;
+    top: 80%;
+}
+
+@media screen and (max-width: 992px) {
+    #_text {
+        font-size: 1.5em;
+    }
+
+    #text {
+        font-size: 4em;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    #_text {
+        font-size: .8em;
+    }
+
+    #text {
+        font-size: 1.8em;
+    }
+}

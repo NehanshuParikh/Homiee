@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="register">
+        <div class="register__content-logo">
+            <img src="/images/logo.png" alt="login"
+                class="register__logo">
+               <h1>YOUR COMFORT PLACE</h1>
+        </div>
+        <div class="register__container-log">
+            <form action="/register" method="post" class="register__login-form">
+                <label for="nombre" class="login-form__label login-form__label--one">Username
+                    <input type="text" id="username" name="username" class="login-form__input" placeholder="Username"
+                        required>
+                </label>
+                <label for="password" class="login-form__label login-form__label--one">Password
+                    <input type="password" id="password" name="password" class="login-form__input"
+                        placeholder="Password" required>
+                </label>
+                <label for="nombre" class="login-form__label login-form__label--one">Email
+                    <input type="email" id="email" name="email" class="login-form__input" placeholder="Email" required>
+                </label>
+                <label for="fullname" class="login-form__label login-form__label--one">Full Name
+                    <input type="text" id="fullname" name="fullname" class="login-form__input" placeholder="Full Name"
+                        required>
+                </label>
+                    <button type="submit" class="btn btn--login">Register Me</button>
+                    
+            </form>
+            <div class="register__qr-content">
+                <p class="qr-content__title">OR WITH THE QR CODE</p>
+                <img src="https://campus.mined.edu.ni/pluginfile.php/236788/mod_resource/content/3/Conoci%C3%A9ndonos%21%20.png"
+                    alt="qr" class="qr-content__qr">
+                <p class="qr-content__parr">Get Ready for an ultimate ride of interacting with people Register yourself
+                    first.</p>
+                    <a href="/login" class="btn--login acct">Already have an account?</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

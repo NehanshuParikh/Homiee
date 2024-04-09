@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+#loader{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 12s both;
+}
+
+#wrapper-loader{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#wrapper-loader #elem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+#wrapper-loader #elem:nth-child(2){
+  background-color: #fff;
+  color: #000;
+}
+#wrapper-loader #elem:nth-child(3){
+  background-color: #fff;
+  color: #000;
+}
+
+#wrapper-loader #elem video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#wrapper-loader #elem:nth-child(1){
+  animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 10s both;
+}
+#wrapper-loader #elem:nth-child(2){
+  animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 11s both;
+}
+
+#main{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+#page1{
+  height: 100vh;
+  width: 100%;
+}
+#page1 #nav{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#page1 #nav img{
+  width: 70px;
+  margin-left: 2rem;
+}
+#page1 #nav #links a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 12px;
+  font-weight: 500;
+}
+#page1 #nav #profile-logo{
+  margin-right: 3rem;
+  cursor: pointer;
+}
+
+@keyframes anim{
+  to{
+      margin-top: -100vh;
+  }
+}
+@keyframes anim2{
+  to{
+      transform: translateY(-100%);
+  }
+}
